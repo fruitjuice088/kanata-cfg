@@ -1,0 +1,45 @@
+;; =====================================
+;; Japanese Symbols (JIS Layout)
+;; =====================================
+
+(defalias
+  ;; 基本記号
+  jp_semi eql
+  jp_coln scln
+  jp_caret apo
+  jp_tilde S-'
+  jp_under (unicode _)
+  jp_prcnt S-5
+  jp_hash S-3
+  jp_at grv
+  jp_dllr S-4
+  jp_bslh \
+
+  ;; 括弧
+  jp_lbkt [
+  jp_rbkt ]
+  jp_lpar S-8
+  jp_rpar S-9
+  jp_lbrc S-[
+  jp_rbrc S-]
+
+  ;; 引用符
+  jp_dqt S-2
+  jp_sqt S-7
+  jp_grave S-grv
+
+  ;; 演算子
+  jp_plus S-eql
+  jp_astrk S-scln
+  jp_minus -
+  jp_equal S--
+  jp_lt S-,
+  jp_rt S-.
+  jp_pipe S-\
+  jp_amps S-6
+
+  ;; !?.
+  jp_excl S-1
+  jp_qmark S-/
+  jp_dot .
+)

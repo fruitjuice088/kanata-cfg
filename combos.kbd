@@ -1,0 +1,23 @@
+;; =====================================
+;; Combos
+;; =====================================
+
+(defvar
+  cmb-ms 75
+)
+
+(defchordsv2
+  (w e) q $cmb-ms all-released ()
+  (j k) (macro mhnk esc) $cmb-ms all-released ()
+  (, .) @jp_under $cmb-ms all-released ()
+  (l eql) @jp_coln $cmb-ms all-released ()
+
+  (d f) mhnk $cmb-ms all-released ()     ;; 位置10,11: 無変換
+  (s d) hnk $cmb-ms all-released ()      ;; 位置11,12: 変換
+
+  (y u) @jp_plus $cmb-ms all-released ()   ;; 位置4,5: + (右手)
+  (u i) @jp_minus $cmb-ms all-released ()  ;; 位置5,6: - (右手)
+  (i o) @jp_astrk $cmb-ms all-released ()  ;; 位置6,7: * (右手)
+
+  (a z) (macro e x i t) $cmb-ms all-released () ;; exit入力マクロ
+)

@@ -1,0 +1,15 @@
+;; =====================================
+;; Main Configuration
+;; =====================================
+
+(defcfg
+  process-unmapped-keys yes
+  concurrent-tap-hold yes
+  rapid-event-delay 5
+  movemouse-inherit-accel-state no
+)
+
+(defvar
+  tap-time 180
+  hold-time 175
+)

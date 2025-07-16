@@ -1,0 +1,26 @@
+;; =====================================
+;; Mouse Emuration
+;; =====================================
+
+(defvar
+  mw-int 50
+  mw-dist 120
+  mus-int 10
+  mus-acc 250
+  mus-min 1
+  mus-max 30
+)
+
+(defalias
+  mouse_up (movemouse-accel-up $mus-int $mus-acc $mus-min $mus-max)
+  mouse_down (movemouse-accel-down $mus-int $mus-acc $mus-min $mus-max)
+  mouse_left (movemouse-accel-left $mus-int $mus-acc $mus-min $mus-max)
+  mouse_right (movemouse-accel-right $mus-int $mus-acc $mus-min $mus-max)
+  mouse_l mlft
+  mouse_r mrgt
+  mouse_m mmid
+  scroll_up (mwheel-up $mw-int $mw-dist)
+  scroll_down (mwheel-down $mw-int $mw-dist)
+  scroll_left (mwheel-left $mw-int $mw-dist)
+  scroll_right (mwheel-right $mw-int $mw-dist)
+)
