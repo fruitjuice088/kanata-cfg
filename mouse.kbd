@@ -4,11 +4,11 @@
 
 (defvar
   mw-int 50
-  mw-dist 120
+  mw-dist 240
   mus-int 10
-  mus-acc 250
+  mus-acc 300
   mus-min 1
-  mus-max 30
+  mus-max 25
 )
 
 (defalias

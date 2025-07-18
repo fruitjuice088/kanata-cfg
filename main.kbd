@@ -26,20 +26,20 @@
 
   ;; Thumb ModTap
   pad_bspc (tap-hold $tap-time $hold-time bspc @pad)
-  sft_spc (tap-hold $tap-time $hold-time spc lsft)
+  sft_spc (tap-hold-press $tap-time $hold-time spc lsft)
   sym_tab (tap-hold $tap-time $hold-time tab @sym)
 
   ;; Home Row Mods
-  home_e (tap-hold $tap-time $hold-time e C-lsft)
-  home_i (tap-hold $tap-time $hold-time i lsft)
-  home_a (tap-hold $tap-time $hold-time a lctl)
-  home_o (tap-hold $tap-time $hold-time o lalt)
-  home_min (tap-hold $tap-time $hold-time - lmet)
-  home_k (tap-hold $tap-time $hold-time k rmet)
-  home_t (tap-hold $tap-time $hold-time t ralt)
-  home_n (tap-hold $tap-time $hold-time n rctl)
-  home_s (tap-hold $tap-time $hold-time s rsft)
-  home_h (tap-hold $tap-time $hold-time h C-rsft)
+  home_e (tap-hold-release $tap-time $hold-time e (multi lctl lsft))
+  home_i (tap-hold-release $tap-time $hold-time i lsft)
+  home_a (tap-hold-release $tap-time $hold-time a lctl)
+  home_o (tap-hold-release $tap-time $hold-time o lalt)
+  home_min (tap-hold-release $tap-time $hold-time - lmet)
+  home_k (tap-hold-release $tap-time $hold-time k lmet)
+  home_t (tap-hold-release $tap-time $hold-time t lalt)
+  home_n (tap-hold-release $tap-time $hold-time n lctl)
+  home_s (tap-hold-release $tap-time $hold-time s lsft)
+  home_h (tap-hold-release $tap-time $hold-time h (multi lctl lsft))
 
   ;; 下段ModTap
   mus_z (tap-hold $tap-time $hold-time z @mus)
@@ -48,6 +48,7 @@
   mus_b (tap-hold $tap-time $hold-time b @mus)
 
   ;; PADレイヤー専用ModTap
+  pad_n0 (tap-hold $tap-time $hold-time 0 (multi lctl lsft))
   pad_n4 (tap-hold $tap-time $hold-time 4 lsft)
   pad_n5 (tap-hold $tap-time $hold-time 5 lctl)
   pad_n6 (tap-hold $tap-time $hold-time 6 lalt)
@@ -59,6 +60,7 @@
   fnc_f9 (tap-hold $tap-time $hold-time f9 lalt)
 
   td1 (tap-dance 200 (@macro_msg @macro_pw1 @macro_pw2 @macro_pw3))
+  td_lng (tap-dance 185 (mhnk hnk))
 )
 
 (include combos.kbd)
@@ -66,13 +68,13 @@
 (deflayer base
   q   l    u    f    ,    g    w    r    y    p
   XX  @home_e @home_i @home_a @home_o @home_min @home_k @home_t @home_n @home_s @home_h mhnk
-  @mus @mus_z x    @fnc_c v  mhnk hnk  d    @fnc_m j    @mus_b
+  @mus @mus_z x    @fnc_c v  mhnk @td_lng d    @fnc_m j    @mus_b
              @pad_bspc @pad_bspc @sft_spc ret @sym_tab
 )
 
 (deflayer pad
   _     1    2    3    @jp_semi @jp_coln @jp_tilde @jp_under / XX
-  _     0    @pad_n4 @pad_n5 @pad_n6 @jp_dot    left down up   rght @jp_excl XX
+  _  @pad_n0 @pad_n4 @pad_n5 @pad_n6 @jp_dot    left down up   rght @jp_excl XX
   _  @jp_prcnt 7 @pad_n8 9 XX XX home S-3 end @jp_qmark
                   XX XX S-spc ret  del
 )
@@ -86,7 +88,7 @@
 
 (deflayer fnc
   XX     f2   f3   f4   f5   volu pgup XX XX XX
-  XX     f6   @fnc_f7 @fnc_f8 @fnc_f9 f10  vold ralt rctl rsft XX XX
+  XX     f6   @fnc_f7 @fnc_f8 @fnc_f9 f10  vold lalt lctl lsft XX XX
   XX     f11  f12  mhnk  @td1  XX XX   pgdn  hnk  XX XX
          _         _    _    _    _
 )

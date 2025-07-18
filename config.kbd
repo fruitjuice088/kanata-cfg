@@ -3,13 +3,13 @@
 ;; =====================================
 
 (defcfg
-  process-unmapped-keys yes
+  process-unmapped-keys no
   concurrent-tap-hold yes
   rapid-event-delay 5
   movemouse-inherit-accel-state no
 )
 
 (defvar
-  tap-time 180
+  tap-time 60
   hold-time 175
 )

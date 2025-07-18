@@ -499,28 +499,64 @@ svg.keymap { background-color: #FFF; }</style>
 <text x="196" y="84" class="combo tap">Q</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="196" y="127" width="28" height="26" class="combo"/>
-<text x="210" y="140" class="combo tap">変換</text>
+<path d="M238,111 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M238,111 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="224" y="98" width="28" height="26" class="combo"/>
+<text x="238" y="111" class="combo tap">Tab</text>
 </g>
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="252" y="127" width="28" height="26" class="combo"/>
-<text x="266" y="140" class="combo tap">無変換</text>
+<text x="266" y="140" class="combo tap">Space</text>
 </g>
 <g class="combo combopos-3">
+<path d="M294,111 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M294,111 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="280" y="98" width="28" height="26" class="combo"/>
+<text x="294" y="111" class="combo tap">.</text>
+</g>
+<g class="combo combopos-4">
+<g transform="rotate(30.0, 161.0, 168.0)">
+<rect rx="6" ry="6" x="147" y="155" width="28" height="26" class="combo"/>
+<text x="161" y="168" class="combo tap">exit</text>
+</g>
+</g>
+<g class="combo combopos-5">
+<g transform="rotate(30.0, 245.0, 168.0)">
+<rect rx="6" ry="6" x="231" y="155" width="28" height="26" class="combo"/>
+<text x="245" y="168" class="combo tap">無変換</text>
+</g>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="518" y="71" width="28" height="26" class="combo"/>
+<text x="532" y="84" class="combo tap">P</text>
+</g>
+<g class="combo combopos-7">
 <rect rx="6" ry="6" x="476" y="127" width="28" height="26" class="combo"/>
 <text x="490" y="140" class="combo tap">Esc</text>
 </g>
-<g class="combo combopos-4">
-<rect rx="6" ry="6" x="588" y="127" width="28" height="26" class="combo"/>
-<text x="602" y="140" class="combo tap">:</text>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="532" y="127" width="28" height="26" class="combo"/>
+<text x="546" y="140" class="combo tap">:</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-9">
+<rect rx="6" ry="6" x="588" y="127" width="28" height="26" class="combo"/>
+<text x="602" y="140" class="combo tap">;</text>
+</g>
+<g class="combo combopos-10">
+<g transform="rotate(-30.0, 497.0, 168.0)">
+<rect rx="6" ry="6" x="483" y="155" width="28" height="26" class="combo"/>
+<text x="497" y="168" class="combo tap">変換</text>
+</g>
+</g>
+<g class="combo combopos-11">
+<path d="M504,167 h-22 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M504,167 h22 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="490" y="154" width="28" height="26" class="combo"/>
+<text x="504" y="167" class="combo tap">G</text>
+</g>
+<g class="combo combopos-12">
 <rect rx="6" ry="6" x="546" y="183" width="28" height="26" class="combo"/>
 <text x="560" y="196" class="combo tap">_</text>
-</g>
-<g class="combo combopos-6">
-<rect rx="6" ry="6" x="147" y="155" width="28" height="26" class="combo"/>
-<text x="161" y="168" class="combo tap">exit</text>
 </g>
 </g>
 </g>
@@ -770,18 +806,6 @@ svg.keymap { background-color: #FFF; }</style>
 </g>
 <g transform="translate(812, 252)" class="key keypos-68">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="406" y="71" width="28" height="26" class="combo"/>
-<text x="420" y="84" class="combo tap">+</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="462" y="71" width="28" height="26" class="combo"/>
-<text x="476" y="84" class="combo tap">-</text>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="518" y="71" width="28" height="26" class="combo"/>
-<text x="532" y="84" class="combo tap">*</text>
 </g>
 </g>
 </g>
