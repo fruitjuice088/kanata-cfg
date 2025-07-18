@@ -17,9 +17,9 @@
 
   ;; Right hand
   (i o) p $cmb-ms all-released ()
-  (j k) (macro mhnk esc) $cmb-ms all-released ()
-  (k l) @jp_coln $cmb-ms all-released ()
-  (l eql) @jp_semi $cmb-ms all-released ()
+  (j k) (macro mhnk esc) $cmb-ms all-released (mus)
+  (k l) @jp_coln $cmb-ms all-released (mus)
+  (l scln) @jp_semi $cmb-ms all-released (mus)
   (k m) hnk $cmb-ms all-released ()
   (m ,) g $cmb-ms all-released ()
   (, .) @jp_under $cmb-ms all-released ()

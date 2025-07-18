@@ -7,6 +7,10 @@
   concurrent-tap-hold yes
   rapid-event-delay 5
   movemouse-inherit-accel-state no
+
+  ;; app-config
+  log-layer-changes no
+  tooltip-layer-changes no
 )
 
 (defvar

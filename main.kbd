@@ -6,7 +6,7 @@
 
 (defsrc
         q    w    e    r    t     y    u    i    o    p
-  caps   a    s    d    f    g     h    j    k    l    eql scln
+  caps   a    s    d    f    g     h    j    k    l    eql
   lsft    z    x    c    v    b     n    m    ,    .    /
               lalt mhnk      spc        hnk  f16
 )
@@ -67,35 +67,35 @@
 
 (deflayer base
   q   l    u    f    ,    g    w    r    y    p
-  XX  @home_e @home_i @home_a @home_o @home_min @home_k @home_t @home_n @home_s @home_h mhnk
+  XX  @home_e @home_i @home_a @home_o @home_min @home_k @home_t @home_n @home_s @home_h
   @mus @mus_z x    @fnc_c v  mhnk @td_lng d    @fnc_m j    @mus_b
              @pad_bspc @pad_bspc @sft_spc ret @sym_tab
 )
 
 (deflayer pad
   _     1    2    3    @jp_semi @jp_coln @jp_tilde @jp_under / XX
-  _  @pad_n0 @pad_n4 @pad_n5 @pad_n6 @jp_dot    left down up   rght @jp_excl XX
+  _  @pad_n0 @pad_n4 @pad_n5 @pad_n6 @jp_dot    left down up   rght @jp_excl
   _  @jp_prcnt 7 @pad_n8 9 XX XX home S-3 end @jp_qmark
                   XX XX S-spc ret  del
 )
 
 (deflayer sym
   XX         @jp_lbkt @jp_dqt @jp_rbkt @jp_amps @jp_caret @jp_lt @jp_equal @jp_rt XX
-  XX     @jp_at @jp_lpar @jp_sqt @jp_rpar @jp_pipe @jp_dllr @jp_plus @jp_astrk @jp_minus XX XX
+  XX     @jp_at @jp_lpar @jp_sqt @jp_rpar @jp_pipe @jp_dllr @jp_plus @jp_astrk @jp_minus XX
   XX     @jp_bslh @jp_lbrc @jp_grave @jp_rbrc XX XX @jp_pipe @jp_amps  XX XX
           bspc  bspc  @sft_spc _  XX
 )
 
 (deflayer fnc
   XX     f2   f3   f4   f5   volu pgup XX XX XX
-  XX     f6   @fnc_f7 @fnc_f8 @fnc_f9 f10  vold lalt lctl lsft XX XX
-  XX     f11  f12  mhnk  @td1  XX XX   pgdn  hnk  XX XX
+  XX     f6   @fnc_f7 @fnc_f8 @fnc_f9 f10  vold lalt lctl lsft XX
+  XX     f11  f12  mhnk  menu @td1 XX   pgdn  hnk  XX XX
          _         _    _    _    _
 )
 
 (deflayer mus
   XX     @scroll_left @scroll_right XX   XX    @scroll_up A-left @mouse_up A-right XX
-  XX     _    lsft lctl lalt _    @scroll_down @mouse_left @mouse_down @mouse_right XX XX
+  XX     _    lsft lctl lalt _    @scroll_down @mouse_left @mouse_down @mouse_right XX
   XX     esc  f22  f24  f23  XX XX  f22  f24  f23  esc
        @mouse_m    @mouse_m lsft @mouse_l @mouse_r
 )
