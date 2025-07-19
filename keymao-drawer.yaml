@@ -10,30 +10,30 @@ layers:
     - {t: I, h: LSFT}
     - {t: A, h: LCTRL}
     - {t: O, h: LALT}
-    - {t: '-', h: $$mdi:microsoft-windows$$}
-    - {t: K, h: $$mdi:microsoft-windows$$}
+    - '-'
+    - K
     - {t: T, h: RALT}
     - {t: N, h: RCTRL}
     - {t: S, h: RSFT}
     - {t: H, h: Ctl+RSHFT}
     - [無変換, "]"]
-    - MSE
+    - Shift
     - {t: Z, h: MSE}
     - X
     - {t: C, h: FUNC}
     - V
     - 無変換
-    - 変換 
+    - 変換
     - D
     - {t: M, h: FUNC}
     - J
-    - {t: B, h: MSE}
-    - ["\\", Shift, ""]
+    - B
+    - [MSE, Shift, ""]
     - [Ctrl, Fn, $$mdi:microsoft-windows$$]
     - {t: $$mdi:backspace$$, h: PAD}
     - {t: $$mdi:backspace$$, h: PAD}
     - {t: $$mdi:keyboard-space$$, h: Shift}
-    - {t: $$mdi:keyboard-return$$, h: JPN}
+    - {t: $$mdi:keyboard-return$$, h: $$mdi:microsoft-windows$$}
     - {t: $$mdi:keyboard-tab$$, h: SYM}
     - [Copilot, $$mdi:arrow-left$$]
     - ""

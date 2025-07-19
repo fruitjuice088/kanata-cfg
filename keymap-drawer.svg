@@ -345,12 +345,10 @@ svg.keymap { background-color: #FFF; }</style>
 <g transform="translate(350, 140)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">-</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
 </g>
 <g transform="translate(406, 140)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">K</text>
-<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
 </g>
 <g transform="translate(462, 140)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -382,7 +380,7 @@ svg.keymap { background-color: #FFF; }</style>
 </g>
 <g transform="translate(56, 196)" class="key keypos-42">
 <rect rx="6" ry="6" x="-54" y="-26" width="108" height="52" class="key"/>
-<text x="0" y="0" class="key tap">MSE</text>
+<text x="0" y="0" class="key tap">Shift</text>
 </g>
 <g transform="translate(140, 196)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -426,11 +424,10 @@ svg.keymap { background-color: #FFF; }</style>
 <g transform="translate(644, 196)" class="key keypos-52">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">B</text>
-<text x="0" y="24" class="key hold">MSE</text>
 </g>
 <g transform="translate(700, 196)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">\</text>
+<text x="0" y="0" class="key tap">MSE</text>
 </g>
 <g transform="translate(756, 196)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -469,7 +466,7 @@ svg.keymap { background-color: #FFF; }</style>
 <g transform="translate(462, 252)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
-<text x="0" y="24" class="key hold">JPN</text>
+<use href="#mdi:microsoft-windows" xlink:href="#mdi:microsoft-windows" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:microsoft-windows"/>
 </g>
 <g transform="translate(518, 252)" class="key keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
