@@ -5,7 +5,7 @@
 (defcfg
   process-unmapped-keys no
   concurrent-tap-hold yes
-  rapid-event-delay 5
+  rapid-event-delay 2
   movemouse-inherit-accel-state no
 
   ;; app-config
@@ -14,6 +14,6 @@
 )
 
 (defvar
-  tap-time 60
-  hold-time 175
+  tap-time 180
+  hold-time 280
 )
