@@ -5,96 +5,39 @@
 (include config.kbd)
 
 (defsrc
-        q    w    e    r    t     y    u    i    o    p
-  caps   a    s    d    f    g     h    j    k    l    eql scln
+  tab   q    w    e    r    t     y    u    i    o    p
+  caps   a    s    d    f    g     h    j    k    l
   lsft    z    x    c    v    b     n    m    ,    .    /
-              lalt mhnk      spc        hnk  f16
+                   mhnk      spc        hnk
 )
-
-(include jp-symbols.kbd)
-(include mouse.kbd)
-(include secrets.kbd)
 
 (defalias
   ;; layers
   pad (layer-while-held pad)
-  sym (layer-while-held sym)
-  fnc (layer-while-held fnc)
-  mus (layer-while-held mus)
 
-  mus_tab (tap-hold $tap-time $hold-time tab @mus)
+  tpad (tap-hold $tap-time $hold-time tab @pad)
 
-  ;; Thumb ModTap
-  pad_bspc (tap-hold-press $tap-time $hold-time bspc @pad)
   sft_spc (tap-hold-press $tap-time $hold-time spc lsft)
-  sym_tab (tap-hold-press $tap-time $hold-time tab @sym)
 
   ;; Home Row Mods
-  home_e (tap-hold-release $tap-time $hold-time e (multi lctl lsft))
-  home_i (tap-hold-release $tap-time $hold-time i lsft)
-  home_a (tap-hold-release $tap-time $hold-time a lctl)
-  home_o (tap-hold-release $tap-time $hold-time o lalt)
-  home_t (tap-hold-release $tap-time $hold-time t lalt)
-  home_n (tap-hold         $tap-time $hold-time n lctl)
-  home_s (tap-hold-release $tap-time $hold-time s lsft)
-  home_h (tap-hold-release $tap-time $hold-time h (multi lctl lsft))
-
-  ;; 下段ModTap
-  mus_z (tap-hold $tap-time $hold-time z @mus)
-  fnc_c (tap-hold $tap-time $hold-time c @fnc)
-  fnc_m (tap-hold $tap-time $hold-time m @fnc)
-
-  ;; PADレイヤー専用ModTap
-  pad_n0 (tap-hold $tap-time $hold-time 0 (multi lctl lsft))
-  pad_n4 (tap-hold $tap-time $hold-time 4 lsft)
-  pad_n5 (tap-hold $tap-time $hold-time 5 lctl)
-  pad_n6 (tap-hold $tap-time $hold-time 6 lalt)
-  pad_n8 (tap-hold $tap-time $hold-time 8 @fnc)
-
-  ;; FNCレイヤー専用ModTap
-  fnc_f7 (tap-hold $tap-time $hold-time f7 lsft)
-  fnc_f8 (tap-hold $tap-time $hold-time f8 lctl)
-  fnc_f9 (tap-hold $tap-time $hold-time f9 lalt)
-
-  ent_win (tap-hold-press $tap-time $hold-time ret lmet)
-
-  td1 (tap-dance 200 (@macro_msg @macro_pw1 @macro_pw2 @macro_pw3))
-  td_lng (tap-dance 185 (mhnk hnk))
+  hd (tap-hold-release $tap-time $hold-time d lctl)
+  hf (tap-hold-release $tap-time $hold-time f lalt)
+  hj (tap-hold-release $tap-time $hold-time j ralt)
+  hk (tap-hold         $tap-time $hold-time k rctl)
 )
 
 (include combos.kbd)
 
 (deflayer base
-  q   l    u    f    ,    g    w    r    y    p
-  XX  @home_e i @home_a @home_o - g @home_t @home_n s @home_h @mus
-  _ @mus_z x    @fnc_c v  @td_lng k d    @fnc_m j    b
-             @pad_bspc @pad_bspc @sft_spc @ent_win @sym_tab
+  @tpad _    _    _    _    _     _    _    _    _    _
+  _      _    _  @hd   @hf   _     _   @hj  @hk   _
+  _       _    _    _    _    _     _    _    _    _    _
+                   bspc    @sft_spc     ret
 )
 
 (deflayer pad
-  _     1    2    3    @jp_semi @jp_coln @jp_tilde @jp_under / XX
-  _  @pad_n0 @pad_n4 @pad_n5 @pad_n6 @jp_dot  XX down up   rght @jp_excl XX
-  _  @jp_prcnt 7 @pad_n8 9 XX left home S-3 end @jp_qmark
-                  XX XX S-spc ret  del
-)
-
-(deflayer sym
-  XX         @jp_lbkt @jp_dqt @jp_rbkt @jp_amps XX @jp_lt @jp_equal @jp_rt XX
-  XX     @jp_at @jp_lpar @jp_sqt @jp_rpar @jp_caret @jp_dllr @jp_plus @jp_astrk @jp_minus XX XX
-  XX     @jp_bslh @jp_lbrc @jp_grave @jp_rbrc XX @jp_pipe @jp_pipe @jp_amps  XX XX
-          bspc  bspc  @sft_spc _  XX
-)
-
-(deflayer fnc
-  XX     f2   f3   f4   f5   XX pgup XX XX XX
-  XX     f6   @fnc_f7 @fnc_f8 @fnc_f9 f10  volu lalt lctl lsft XX XX
-  XX     f11  f12  mhnk  menu @td1 vold   pgdn  hnk  XX XX
-         _         _    _    _    _
-)
-
-(deflayer mus
-  XX     @scroll_left @scroll_right XX   XX   XX A-left @mouse_up A-right XX
-  XX     _    lsft lctl lalt _    @scroll_up @mouse_left @mouse_down @mouse_right XX XX
-  XX     esc  f22  f24  f23  XX @scroll_down f22  f24  f23  esc
-       @mouse_m    @mouse_m lsft @mouse_l @mouse_r
+  XX    _    _    _    _    _    pgup  _    _    _    _
+  _      _    _    _    _    _    left down  up  rght
+  _       _    _    _    _    _    pgdn home  _   end   _
+                    _         _          _
 )

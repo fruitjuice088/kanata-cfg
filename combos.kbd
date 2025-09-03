@@ -7,21 +7,17 @@
 )
 
 (defchordsv2
-  ;; Left hand
   (w e) q $cmb-ms all-released ()
-  ;; (s d) g $cmb-ms all-released ()
-  (s f) tab $cmb-ms all-released ()
-  (d f) spc $cmb-ms all-released ()
-  (d g) @jp_dot $cmb-ms all-released ()
-  (a z) (macro e x i t) $cmb-ms all-released ()
-  (d c) mhnk $cmb-ms all-released ()
-
-  ;; Right hand
   (i o) p $cmb-ms all-released ()
-  (j k) esc $cmb-ms all-released (mus)
-  (k l) @jp_coln $cmb-ms all-released (mus)
-  (l eql) @jp_semi $cmb-ms all-released (mus)
+
+  (s d) del $cmb-ms all-released ()
+  (s f) tab $cmb-ms all-released ()
+
+  (j k) esc $cmb-ms all-released ()
+  (, .) (unicode _) $cmb-ms all-released ()
+
+  (d c) mhnk $cmb-ms all-released ()
   (k m) hnk $cmb-ms all-released ()
-  ;; (m ,) g $cmb-ms all-released ()
-  (, .) @jp_under $cmb-ms all-released ()
+
+  (a z) (macro e x i t) $cmb-ms all-released ()
 )
