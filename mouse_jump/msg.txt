@@ -1,0 +1,128 @@
+See the end of this message for details on invoking 
+just-in-time (JIT) debugging instead of this dialog box.
+
+************** Exception Text **************
+System.EntryPointNotFoundException: Unable to find an entry point named 'PostMessage' in DLL 'user32.dll'.
+   at MouseJumpUtility.NativeMethods.<PostMessage>g____PInvoke|6_0(IntPtr __hWnd_native, UInt32 __Msg_native, IntPtr __wParam_native, IntPtr __lParam_native)
+   at MouseJumpUtility.NativeMethods.PostMessage(IntPtr hWnd, UInt32 Msg, IntPtr wParam, IntPtr lParam) in C:\Users\kzmns\Downloads\mouse_jump\obj\Release\net8.0-windows\Microsoft.Interop.LibraryImportGenerator\Microsoft.Interop.LibraryImportGenerator\LibraryImports.g.cs:line 78
+   at MouseJumpUtility.MouseJumpApp.JumpToPosition(String position) in C:\Users\kzmns\Downloads\mouse_jump\Program.cs:line 82
+   at System.Windows.Forms.NativeWindow.Callback(HWND hWnd, MessageId msg, WPARAM wparam, LPARAM lparam)
+
+
+************** Loaded Assemblies **************
+System.Private.CoreLib
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Private.CoreLib.dll
+----------------------------------------
+MouseJumpUtility
+    Assembly Version: 1.0.0.0
+    Location: C:\Users\kzmns\Downloads\mouse_jump\bin\Release\net8.0-windows\MouseJumpUtility.dll
+----------------------------------------
+System.Runtime
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Runtime.dll
+----------------------------------------
+System.Windows.Forms
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\8.0.12\System.Windows.Forms.dll
+----------------------------------------
+System.Windows.Forms.Primitives
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\8.0.12\System.Windows.Forms.Primitives.dll
+----------------------------------------
+System.Runtime.InteropServices
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Runtime.InteropServices.dll
+----------------------------------------
+System.Threading
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Threading.dll
+----------------------------------------
+System.Diagnostics.TraceSource
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Diagnostics.TraceSource.dll
+----------------------------------------
+System.Collections
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Collections.dll
+----------------------------------------
+System.ComponentModel.Primitives
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.ComponentModel.Primitives.dll
+----------------------------------------
+System.Drawing.Primitives
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Drawing.Primitives.dll
+----------------------------------------
+System.Drawing.Common
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\8.0.12\System.Drawing.Common.dll
+----------------------------------------
+System.Collections.Specialized
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Collections.Specialized.dll
+----------------------------------------
+Microsoft.Win32.Primitives
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\Microsoft.Win32.Primitives.dll
+----------------------------------------
+Microsoft.Win32.SystemEvents
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\8.0.12\Microsoft.Win32.SystemEvents.dll
+----------------------------------------
+System.Threading.Thread
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Threading.Thread.dll
+----------------------------------------
+System.ComponentModel.EventBasedAsync
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.ComponentModel.EventBasedAsync.dll
+----------------------------------------
+Accessibility
+    Assembly Version: 4.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\8.0.12\Accessibility.dll
+----------------------------------------
+System.Collections.Concurrent
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Collections.Concurrent.dll
+----------------------------------------
+System.ComponentModel.TypeConverter
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.ComponentModel.TypeConverter.dll
+----------------------------------------
+System.Numerics.Vectors
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Numerics.Vectors.dll
+----------------------------------------
+System.Memory
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Memory.dll
+----------------------------------------
+System.ComponentModel
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.ComponentModel.dll
+----------------------------------------
+System.Runtime.Loader
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Runtime.Loader.dll
+----------------------------------------
+System.Diagnostics.StackTrace
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Diagnostics.StackTrace.dll
+----------------------------------------
+System.Reflection.Metadata
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Reflection.Metadata.dll
+----------------------------------------
+System.Collections.Immutable
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Collections.Immutable.dll
+----------------------------------------
+System.Text.Encoding.Extensions
+    Assembly Version: 8.0.0.0
+    Location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.12\System.Text.Encoding.Extensions.dll
+----------------------------------------
+
+************** JIT Debugging **************
+
+
