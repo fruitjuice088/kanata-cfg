@@ -21,19 +21,19 @@
   sft_spc (tap-hold $tap-time $hold-time spc lsft)
 
   ;; Home Row Mods
-  hd (tap-hold-release $tap-time $hold-time d lctl)
-  hf (tap-hold-release $tap-time $hold-time f lalt)
-  hj (tap-hold-release $tap-time $hold-time j ralt)
-  hk (tap-hold         $tap-time $hold-time k rctl)
+  ha (tap-hold-release $tap-time $hold-time a lctl)
+  ho (tap-hold-release $tap-time $hold-time o lalt)
+  ht (tap-hold-release $tap-time $hold-time t ralt)
+  hn (tap-hold         $tap-time $hold-time n rctl)
 )
 
 (include combos.kbd)
 
 (deflayer base
        _    _    _    _    _     _    _    _    _    _   _   _
-  @tpad _    _    _    _    _     _    _    _    _    _
-  _      _    _  @hd   @hf   _     _   @hj  @hk   _    _   _
-  _       _    _    _    _    _     _    _    _    _    _
+  @tpad esc  l    u    f    ,     g    w    r    y    del
+  _      e    i  @ha   @ho   -     k   @ht  @hn   s    h   _
+  _       _    _    _    _    _     _    d    m    j    b
                    bspc    @sft_spc     ret
 )
 

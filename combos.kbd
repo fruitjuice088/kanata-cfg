@@ -20,8 +20,9 @@
   (s d) del $cmb-ms all-released ()
   (s f) tab $cmb-ms all-released ()
 
-  (j k) esc $cmb-ms all-released ()
+  (j k) (macro mhnk esc) $cmb-ms all-released ()
   (, .) (unicode _) $cmb-ms all-released ()
+  (i l) . $cmb-ms all-released ()
 
   (d c) mhnk $cmb-ms all-released ()
   (k m) hnk $cmb-ms all-released ()
