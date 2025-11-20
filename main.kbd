@@ -7,40 +7,22 @@
 (defsrc
        1    2    3    4    5     6    7    8    9    0  -  apo
   tab   q    w    e    r    t     y    u    i    o    p
-  caps   a    s    d    f    g     h    j    k    l   eql scln
+  rctl   a    s    d    f    g     h    j    k    l   eql scln
   lsft    z    x    c    v    b     n    m    ,    .    /
-                   mhnk      spc        hnk
+  lctl    lmet lalt mhnk     spc       hnk
 )
 
 (defalias
-  ;; layers
-  pad (layer-while-held pad)
-
-  tpad (tap-hold $tap-time $hold-time tab @pad)
-
-  sft_spc (tap-hold-release $tap-time $hold-time spc lsft)
-
-  ;; Home Row Mods
-  ha (tap-hold-release $tap-time $hold-time a lctl)
-  ho (tap-hold         $tap-time $hold-time o lalt)
-  ht (tap-hold         $tap-time $hold-time t ralt)
-  hn (tap-hold         $tap-time $hold-time n rctl)
+  lopt (tap-hold-release $tap-time $hold-time f24  lctl)
+  sands (tap-hold-release $tap-time $hold-time spc lsft)
 )
 
 (include combos.kbd)
 
 (deflayer base
-       _    _    _    _    _     _    _    _    _    _   /   _
-  @tpad esc  l    u    f    ,     g    w    r    y    del
-  _      e    i  @ha   @ho   -     k   @ht  @hn   s    h   _
-  _       _    _    _    _    .     _    d    m    j    b
-                   bspc    @sft_spc     ret
-)
-
-(deflayer pad
        _    _    _    _    _     _    _    _    _    _   _   _
-  XX    _    _    _    _    _    pgup  _    _    _    _
-  _      _    _    _    _    _    left down  up  rght  _   _
-  _       _    _    _    _    _    pgdn home  _   end   _
-                    _         _          _
+  _     _    _    _    _    _     _    _    _    _    _
+  _      _    _    _    _    _     _    _    _    _    _   _
+  _       _    _    _    _    _     _    _    _    _    _
+  @lopt   _    _    _      @sands        _
 )
