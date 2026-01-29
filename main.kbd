@@ -18,6 +18,18 @@
   sands (tap-hold-press $tap-time $hold-time spc lsft)
 )
 
+;; Emacs-style shortcuts with RCtrl (CapsLock key)
+;; C-a: Home, C-e: End, C-n: Down, C-p: Up, C-d: Delete, C-h: Backspace
+;; C-b is preserved for tmux
+(defoverrides
+  (rctl a) (home)
+  (rctl e) (end)
+  (rctl n) (down)
+  (rctl p) (up)
+  (rctl d) (del)
+  (rctl h) (bspc)
+)
+
 (include combos.kbd)
 
 (deflayer base
