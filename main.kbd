@@ -14,7 +14,8 @@
 
 (defalias
   lopt (tap-hold-release $tap-time $hold-time f24  lctl)
-  sands (tap-hold-release $tap-time $hold-time spc lsft)
+  ;; detect when pressed
+  sands (tap-hold-press $tap-time $hold-time spc lsft)
 )
 
 (include combos.kbd)
