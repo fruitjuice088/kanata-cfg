@@ -7,12 +7,12 @@
 )
 
 (defchordsv2
-  (1 4) f19 $cmb-ms all-released ()
-  (1 2) f20 $cmb-ms all-released ()
-  (3 4) f21 $cmb-ms all-released ()
-  (1 3) f22 $cmb-ms all-released ()
-  (2 4) f23 $cmb-ms all-released ()
-  (2 3) f24 $cmb-ms all-released ()
+  (1 3) f18 $cmb-ms all-released ()
+  (2 4) f19 $cmb-ms all-released ()
+  (2 3) f20 $cmb-ms all-released ()
+  (1 4) f21 $cmb-ms all-released ()
+  (1 2) f22 $cmb-ms all-released ()
+  (3 4) f23 $cmb-ms all-released ()
 
   (s f) tab $cmb-ms all-released ()
 

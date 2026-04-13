@@ -7,12 +7,12 @@ This is a utility to jump the mouse cursor to different positions on the active 
 1.  Run the `MouseJumpUtility.exe`.
 2.  An icon will appear in the system tray.
 3.  Use the following hotkeys to move the mouse:
-    *   **F19:** Center
-    *   **F20:** Top-Left
-    *   **F21:** Top-Right
-    *   **F22:** Bottom-Left
-    *   **F23:** Bottom-Right
-    *   **F24:** Top-Center
+    *   **F18:** Bottom-Left
+    *   **F19:** Bottom-Right
+    *   **F20:** Top-Center
+    *   **F21:** Center
+    *   **F22:** Top-Left
+    *   **F23:** Top-Right
 4.  Right-click the tray icon and select "Exit" to close the application.
 
 ## How to Publish

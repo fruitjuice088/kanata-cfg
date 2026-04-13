@@ -13,12 +13,12 @@ internal static class Program
 
     private static readonly (int Key, string Position)[] JumpKeys =
     {
-        (0x82, "Center"),      // F19
-        (0x83, "TopLeft"),     // F20
-        (0x84, "TopRight"),    // F21
-        (0x85, "BottomLeft"),  // F22
-        (0x86, "BottomRight"), // F23
-        (0x87, "TopCenter")    // F24
+        (0x81, "BottomLeft"),   // F18
+        (0x82, "BottomRight"),  // F19
+        (0x83, "TopCenter"),    // F20
+        (0x84, "Center"),       // F21
+        (0x85, "TopLeft"),      // F22
+        (0x86, "TopRight")      // F23
     };
 
     [STAThread]
