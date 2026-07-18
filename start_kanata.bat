@@ -1,7 +1,7 @@
 @echo off
 
 set KANATA_EXE=%OneDrive%\apps\kanata.exe
-set CONFIG_FILE=%OneDrive%\repos\kanata-cfg\main.kbd
+set CONFIG_FILE=%~dp0\main.kbd
 tasklist | findstr /i kanata.exe >nul
 if %ERRORLEVEL% EQU 0 (
     echo kanata is already running. Exiting...
